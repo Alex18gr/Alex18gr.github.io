@@ -30,7 +30,7 @@ jobs:
       id: deployment
       uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
       with:
-        path: dist/alex18gr.github.io/
+        path: dist/alex18gr.github.io/browser
   # Deployment job
   deploy:
     environment:
