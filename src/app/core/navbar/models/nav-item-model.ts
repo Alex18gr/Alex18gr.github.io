@@ -1,4 +1,5 @@
 export interface NavItem {
   label: string;
-  icon?: string;
+  path: any[];
+  icon?: any;// IconProp;
 }

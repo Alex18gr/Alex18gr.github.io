@@ -4,7 +4,7 @@
       A/T
     </h2>
   </div>
-  <div class="flex gap-5 pl-4">
+  <div class="flex flex-grow gap-5 px-4 h-full">
     @for (item of navItems(); track item.label) {
       <app-navbar-item class="" [navItem]="item" />
     }

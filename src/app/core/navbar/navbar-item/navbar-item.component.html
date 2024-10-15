@@ -1,3 +1,11 @@
-<a>
-  {{ navItem()?.label }}
+<a
+  class="h-full flex flex-col justify-center text-white font-semibold"
+  [routerLink]="navItem()?.path"
+>
+  @if (navItem()?.icon; as icon) {
+    <fa-icon [icon]="icon"></fa-icon>
+  }
+  <span>
+    {{ navItem()?.label }}
+  </span>
 </a>
