@@ -1,6 +1,6 @@
 import {Component, input} from '@angular/core';
 import {NavItem} from '../models/nav-item-model';
-import {RouterLink} from '@angular/router';
+import {RouterLink, RouterLinkActive} from '@angular/router';
 import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 
 @Component({
@@ -8,7 +8,8 @@ import {FaIconComponent} from '@fortawesome/angular-fontawesome';
   standalone: true,
   imports: [
     RouterLink,
-    FaIconComponent
+    FaIconComponent,
+    RouterLinkActive
   ],
   templateUrl: './navbar-item.component.html',
   styleUrl: './navbar-item.component.scss'

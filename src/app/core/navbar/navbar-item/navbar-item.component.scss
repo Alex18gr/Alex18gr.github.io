@@ -18,7 +18,7 @@ a::before {
 a:active::before {
   background-color: white;
 }
-a:hover::before, a:focus::before {
+a:hover::before, a:focus::before, a.activated::before {
   transform-origin: left top;
   transform: scale(1, 1);
 }
