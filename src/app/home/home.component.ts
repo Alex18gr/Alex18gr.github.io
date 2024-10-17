@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ButtonComponent } from "../core/UI/button/button.component";
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,12 @@ import { ButtonComponent } from "../core/UI/button/button.component";
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+
+  private metaService = inject(Meta);
+
+  ngOnInit(): void {
+    // set meta data for SEO...
+  }
 
 }
