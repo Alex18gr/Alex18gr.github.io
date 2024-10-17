@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { AboutSectionComponent } from "./about-section/about-section.component";
-import { faGraduationCap, faMessage, faBriefcase, faScrewdriverWrench, faList } from '@fortawesome/free-solid-svg-icons';
+import { aboutSections } from './about-sections';
 
 @Component({
   selector: 'app-about-me',
@@ -10,9 +10,5 @@ import { faGraduationCap, faMessage, faBriefcase, faScrewdriverWrench, faList } 
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
-  faGraduationCap = faGraduationCap;
-  faMessage = faMessage;
-  faBriefcase = faBriefcase;
-  faScrewdriverWrench = faScrewdriverWrench;
-  faList = faList;
+  aboutSections = signal(aboutSections);
 }

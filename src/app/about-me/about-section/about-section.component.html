@@ -6,6 +6,6 @@
         <h1 class="font-semibold text-2xl text-white">{{ label() }}</h1>
     </section>
     <section>
-        <ng-content />
+        <app-about-section-content [sectionType]="sectionType()" />
     </section>
 </div>

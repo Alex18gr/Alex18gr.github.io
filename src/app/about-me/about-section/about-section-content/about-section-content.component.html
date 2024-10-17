@@ -1,0 +1,20 @@
+<div>
+    @switch (sectionType()) {
+        @case (AboutSectionType.About) {
+            <app-about />
+        }
+        @case (AboutSectionType.Education) {
+            <app-about-education />
+        }
+        @case (AboutSectionType.Projects) {
+            <app-about-projects />
+        }
+        @case (AboutSectionType.TechnicalSkills) {
+            <app-about-technical-skills />
+        }
+        @case (AboutSectionType.WorkExperience) {
+            <app-about-work-experience />
+        }
+        @default {}
+    }
+</div>
