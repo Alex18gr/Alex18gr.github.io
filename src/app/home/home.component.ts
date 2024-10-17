@@ -15,6 +15,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     // set meta data for SEO...
+    this.metaService.updateTag({
+      name: 'description',
+      content: 'Alexandros Tsichouridis personal page | Senior Software Engineer - Full stack web developer'
+    });
   }
 
 }
