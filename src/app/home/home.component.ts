@@ -1,6 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ButtonComponent } from "../core/UI/button/button.component";
 import { Meta } from '@angular/platform-browser';
+import {CvService} from '../services/cv.service';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +13,7 @@ import { Meta } from '@angular/platform-browser';
 export class HomeComponent implements OnInit {
 
   private metaService = inject(Meta);
+  private cvService = inject(CvService);
 
   ngOnInit(): void {
     // set meta data for SEO...
@@ -21,4 +23,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  downloadCV() {
+    this.cvService.downloadCV();
+  }
 }
