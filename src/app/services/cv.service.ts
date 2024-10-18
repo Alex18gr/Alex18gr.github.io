@@ -6,8 +6,6 @@ import {HttpClient} from '@angular/common/http';
 })
 export class CvService {
 
-  private http = inject(HttpClient);
-
   private _cvUrl = '';
 
   constructor() { }
