@@ -1,12 +1,22 @@
-<nav class="flex items-center h-14 bg-blue-800 border-b-2 border-b-blue-900">
+<nav class="flex items-center h-14 bg-blue-800 border-b-2 border-b-blue-900 z-10 relative">
   <div class="text-white h-full pl-4 cursor-pointer flex items-center" routerLink="/">
     <h2 class="text-2xl font-semibold">
       A/T
     </h2>
   </div>
-  <div class="ml-auto flex  gap-7 px-4 h-full">
+  <div class="ml-auto gap-7 px-4 h-full hidden md:flex">
     @for (item of navItems(); track item.label) {
       <app-navbar-item class="" [navItem]="item" />
     }
   </div>
+  <div class="ml-auto md:hidden p-3 text-white font-semibold text-2xl cursor-pointer hover:bg-blue-900" (click)="toggleMenu()">
+    <fa-icon [icon]="mobileMenuIcon"></fa-icon>
+  </div>
+  @if (showMobileMenu()) {
+    <div @showHide class="absolute top-14 left-0 right-0 flex flex-col py-4 gap-1 px-0 w-full bg-blue-800 overflow-hidden md:hidden">
+      @for (item of navItems(); track item.label) {
+        <app-navbar-item class="" [navItem]="item" (itemClicked)="navItemClicked()" />
+      }
+    </div>
+  }
 </nav>

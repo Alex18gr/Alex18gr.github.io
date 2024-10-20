@@ -1,15 +1,6 @@
-import {animate, animation, style, transition, trigger, useAnimation} from '@angular/animations';
+import {animate, style, transition, trigger} from '@angular/animations';
 
-export const showDetailsAnimation = animation([
-  style({
-    height: '{{ startHeight }}',
-  }),
-  animate('{{ time }}', style({
-    height: '{{ targetHeight }}',
-  }))
-]);
-
-export const triggerShowDetailsAnimation = trigger('showHide', [
+export const triggerShowHeightAnimation = trigger('showHide', [
   transition(':enter', [
     style({ height: '0' }),
     animate('200ms ease-out', style({

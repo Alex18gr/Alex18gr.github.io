@@ -2,7 +2,7 @@ import {Component, input, signal} from '@angular/core';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { AboutSectionContentComponent } from "./about-section-content/about-section-content.component";
 import { AboutSectionType } from '../enums/about-section-enum';
-import {myTriggerAnimation, triggerShowDetailsAnimation} from '../animations/about-section-animations';
+import {myTriggerAnimation, triggerShowHeightAnimation} from '../../core/animations/about-section-animations';
 import {animate, style, transition, trigger} from '@angular/animations';
 
 @Component({
@@ -15,7 +15,7 @@ import {animate, style, transition, trigger} from '@angular/animations';
   templateUrl: './about-section.component.html',
   styleUrl: './about-section.component.scss',
   animations: [
-    triggerShowDetailsAnimation,
+    triggerShowHeightAnimation,
     myTriggerAnimation
   ]
 })

@@ -1,4 +1,4 @@
-import {Component, input} from '@angular/core';
+import {Component, input, output} from '@angular/core';
 import {NavItem} from '../models/nav-item-model';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {FaIconComponent} from '@fortawesome/angular-fontawesome';
@@ -17,5 +17,8 @@ import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 export class NavbarItemComponent {
 
   navItem = input<NavItem>();
+  itemClicked = output<void>();
+
+
 
 }

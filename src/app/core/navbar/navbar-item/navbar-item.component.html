@@ -1,5 +1,6 @@
 <a
   class="h-full flex flex-col justify-center text-white font-semibold"
+  (click)="itemClicked.emit()"
   [routerLink]="navItem()?.path"
   routerLinkActive="activated"
   [routerLinkActiveOptions]="{ exact: true }"
