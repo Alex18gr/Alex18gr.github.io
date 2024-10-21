@@ -1,41 +1,11 @@
 <ul class="timeline">
-  <li class="container">
-    <div class="content">
-      <app-work-experience-item>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-      </app-work-experience-item>
-    </div>
-  </li>
-  <li class="container">
-    <div class="content">
-      <app-work-experience-item>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-      </app-work-experience-item>
-    </div>
-  </li>
-  <li class="container">
-    <div class="content">
-      <app-work-experience-item>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-        <p>work-experience-item works!</p>
-      </app-work-experience-item>
-    </div>
-  </li>
+  @for (item of workExperienceItems(); track item.key) {
+    <li class="container">
+      <div class="content">
+        <app-work-experience-item [workExperienceItem]="item">
+
+        </app-work-experience-item>
+      </div>
+    </li>
+  }
 </ul>

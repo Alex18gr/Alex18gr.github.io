@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, signal} from '@angular/core';
 import {WorkExperienceItemComponent} from './work-experience-item/work-experience-item.component';
+import {workExperienceItems} from './work-experience-items/work-experience-items';
 
 @Component({
   selector: 'app-about-work-experience',
@@ -11,5 +12,5 @@ import {WorkExperienceItemComponent} from './work-experience-item/work-experienc
   styleUrl: './about-work-experience.component.scss'
 })
 export class AboutWorkExperienceComponent {
-
+  workExperienceItems = signal(workExperienceItems);
 }
