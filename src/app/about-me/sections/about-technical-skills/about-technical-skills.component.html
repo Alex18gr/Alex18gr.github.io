@@ -1,1 +1,7 @@
-<p>about-technical-skills works!</p>
+<ul class="flex flex-wrap gap-2 px-2 py-4">
+  @for (item of technicalSkills(); track item.name) {
+    <li>
+      <app-skill-item [technicalSkill]="item" />
+    </li>
+  }
+</ul>

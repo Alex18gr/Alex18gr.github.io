@@ -23,7 +23,7 @@ const infodimPositionDescription = `
 
 export const workExperienceItems: WorkExperience[] = [
   {
-    key: 'deloitte_1',
+    key: 'deloitte_2',
     company: 'Deloitte',
     duration: {
       from: new Date('2024-07-01'),

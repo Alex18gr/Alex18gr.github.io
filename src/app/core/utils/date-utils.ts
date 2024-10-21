@@ -17,7 +17,7 @@ export function diffMonths(dt2: Date, dt1: Date) {
 function calculateText(years: number, months: number): string {
   let yearText = '';
   if (years === 1) {
-    yearText = years + 'year';
+    yearText = years + ' year';
   } else if (years > 1) {
     yearText = years + ' years';
   }
@@ -56,6 +56,6 @@ export function getDatePeriod(dt1: Date, dt2: Date | undefined) {
   } else {
     dateToText = 'now';
   }
-  return dateFromText + ' ' + dateToText;
+  return dateFromText + ' - ' + dateToText;
 }
 
