@@ -7,15 +7,18 @@ export const contactDetails: ContactModel[] = [
     title: 'Email',
     icon: faAt,
     url: 'mailto:alexchih02@gmail.com',
+    description: 'alexchih02@gmail.com'
   },
   {
     title: 'LinkedIn',
     icon: faLinkedin,
     url: 'https://www.linkedin.com/in/alexandros-tsichouridis-80771415a/',
+    description: 'in/alexandros-tsichouridis-80771415a/'
   },
   {
     title: 'GitHub',
     icon: faGithub,
     url: 'https://github.com/Alex18gr',
+    description: 'github.com/Alex18gr'
   }
 ];

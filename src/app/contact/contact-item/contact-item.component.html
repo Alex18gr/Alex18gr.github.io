@@ -1,7 +1,14 @@
-<a [href]="contact().url" target="_blank">
-  <article class="flex gap-3 p-3 bg-blue-800 text-white text-2xl hover:bg-blue-900">
-    <fa-icon [icon]="contact().icon"></fa-icon>
-    <h1>{{ contact().title }}</h1>
-    <h3>{{ contact().description }}</h3>
-  </article>
-</a>
+
+<article class="flex gap-3 p-3 border-blue-950 border-4 rounded-md bg-blue-700 text-gray-300 text-xl md:text-2xl">
+  <fa-icon [icon]="contact().icon"></fa-icon>
+  <div class="flex flex-col gap-1">
+    <h1 class="font-semibold">{{ contact().title }}</h1>
+    <h3 class="cursor-auto">
+      <a class="hover:underline" [href]="contact().url" target="_blank">
+        {{ contact().description }}
+      </a>
+      <fa-icon class="cursor-pointer active:text-gray-400 ml-4 hidden md:inline" [icon]="copyIcon" (click)="copyLinkToClipboard()"></fa-icon>
+    </h3>
+  </div>
+  <fa-icon class="cursor-pointer active:text-gray-400 ml-4 text-5xl flex-grow text-end hidden md:hidden" [icon]="copyIcon" (click)="copyLinkToClipboard()"></fa-icon>
+</article>
