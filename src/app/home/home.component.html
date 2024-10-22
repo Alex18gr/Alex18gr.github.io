@@ -1,0 +1,39 @@
+<div class="bg-gray-200">
+  <article class="home-info mx-auto p-4 rounded-md">
+    <section class="flex flex-col gap-2 text-center">
+      <div class="py-4">
+        <h1 class="font-semibold text-4xl text-gray-900">Alexandros Tsichouridis</h1>
+        <h3 class="text-gray-600 my-3">Senior Software Engineer | Full Stack Web Developer</h3>
+        <app-button label="Download CV" (click)="downloadCV()" class="hidden" />
+        <ul class="flex flex-wrap justify-center gap-2 px-1 py-2">
+          @for (item of skills(); track item.name) {
+            <li>
+              <app-skill-item [technicalSkill]="item" />
+            </li>
+          }
+        </ul>
+
+      </div>
+    </section>
+    <div class="hidden md:block border-4 rounded border-gray-300 w-2"></div>
+    <section class="flex flex-col justify-center leading-6">
+      <p class="py-4 m-auto text-justify w-full sm:w-10/12 md:w-full md:text-left text-balance">
+        Hello, I am Alex. I work as a senior software engineer. I am interested in achieving clean software design and high-quality code. The main code languages I work with are Java and JavaScript.
+        During work and personal projects, I use Spring Framework and Angular or React.js. My main research interests are related to effective programming teaching.
+      </p>
+    </section>
+  </article>
+
+</div>
+
+<div class="flex flex-col items-center">
+  <article>
+
+  </article>
+
+  <section class="flex flex-col items-center mt-16">
+    <h1>Developed by me with <3</h1>
+    <a class="hover:underline" target="_blank" href="https://github.com/Alex18gr/Alex18gr.github.io">View on GitHub</a>
+  </section>
+</div>
+

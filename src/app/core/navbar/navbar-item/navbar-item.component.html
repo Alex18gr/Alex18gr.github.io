@@ -1,0 +1,14 @@
+<a
+  class="h-full flex flex-col justify-center text-white font-semibold"
+  (click)="itemClicked.emit()"
+  [routerLink]="navItem()?.path"
+  routerLinkActive="activated"
+  [routerLinkActiveOptions]="{ exact: true }"
+>
+  @if (navItem()?.icon; as icon) {
+    <fa-icon [icon]="icon"></fa-icon>
+  }
+  <span>
+    {{ navItem()?.label }}
+  </span>
+</a>

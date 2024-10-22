@@ -1,0 +1,10 @@
+<h1 class="text-2xl font-semibold text-gray-800">{{ position().positionTitle }}</h1>
+@if (showCompany()) {
+  <h1>{{ position().companyName }}</h1>
+}
+<h2>{{ position().location }}</h2>
+<h2 class="text-gray-600"><fa-icon class="text-blue-800" [icon]="dateIcon"></fa-icon> {{ datePeriodText() }} &bull; {{ differenceText() }}</h2>
+<div class="work-experience-description ml-5">
+  <div [innerHTML]="position().description">
+  </div>
+</div>

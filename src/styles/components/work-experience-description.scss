@@ -1,0 +1,8 @@
+.work-experience-description {
+  ul {
+    list-style-type: disc;
+    li::marker {
+      color: theme('colors.blue.800');
+    }
+  }
+}

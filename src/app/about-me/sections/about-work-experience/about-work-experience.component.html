@@ -1,0 +1,11 @@
+<ul class="timeline">
+  @for (item of workExperienceItems(); track item.key) {
+    <li class="container">
+      <div class="content">
+        <app-work-experience-item [workExperienceItem]="item">
+
+        </app-work-experience-item>
+      </div>
+    </li>
+  }
+</ul>

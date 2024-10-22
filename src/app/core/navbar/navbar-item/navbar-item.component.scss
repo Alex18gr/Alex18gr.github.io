@@ -1,0 +1,64 @@
+a {
+  position: relative;
+  padding: 1rem;
+  &.activated {
+    background-color: theme('colors.blue.900');
+  }
+  &:hover {
+    background-color: theme('colors.blue.900');
+  }
+}
+
+a::before {
+  content: '';
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s,transform 0.2s ease-out;
+}
+a:active::before {
+  background-color: white;
+}
+a:hover::before, a:focus::before, a.activated::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+@media (min-width: 640px) {
+
+}
+
+@media (min-width: 768px) {
+  a::before {
+    display: block;
+  }
+
+  a {
+    &.activated {
+      background-color: unset;
+    }
+
+    &:hover {
+      background-color: unset;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+
+}
+
+@media (min-width: 1536px) {
+
+}
+
