@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavbarItemComponent } from './navbar-item.component';
+import {provideRouter, RouterLink, RouterLinkActive} from '@angular/router';
+import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 
 describe('NavbarItemComponent', () => {
   let component: NavbarItemComponent;
@@ -8,7 +10,10 @@ describe('NavbarItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavbarItemComponent]
+      imports: [NavbarItemComponent],
+      providers: [
+        provideRouter([])
+      ]
     })
     .compileComponents();
 
