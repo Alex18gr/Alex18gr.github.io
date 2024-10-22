@@ -3,12 +3,12 @@ import {faAt} from '@fortawesome/free-solid-svg-icons';
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
 export const contactDetails: ContactModel[] = [
-  {
-    title: 'Email',
-    icon: faAt,
-    url: 'mailto:alexchih02@gmail.com',
-    description: 'alexchih02@gmail.com'
-  },
+  // {
+  //   title: 'Email',
+  //   icon: faAt,
+  //   url: 'mailto:--EMAIL--',
+  //   description: '--EMAIL--'
+  // },
   {
     title: 'LinkedIn',
     icon: faLinkedin,
