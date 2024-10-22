@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavbarItemComponent } from './navbar-item.component';
-import {provideRouter, RouterLink, RouterLinkActive} from '@angular/router';
-import {FaIconComponent} from '@fortawesome/angular-fontawesome';
+import {provideRouter} from '@angular/router';
 
 describe('NavbarItemComponent', () => {
   let component: NavbarItemComponent;
