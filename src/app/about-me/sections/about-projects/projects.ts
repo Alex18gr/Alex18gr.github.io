@@ -33,6 +33,7 @@ const ideLearnDescription = `
 export const projects: AboutProjectModel[] = [
   {
     title: 'IDE Learn',
+    purpose: 'MSc Thesis',
     descriptionContent: ideLearnDescription,
     duration: {
       from: new Date('2023-07-01'),
@@ -42,6 +43,7 @@ export const projects: AboutProjectModel[] = [
   },
   {
     title: 'ACode Learn',
+    purpose: 'BSc Thesis',
     descriptionContent: acodeLearnDescription,
     duration: {
       from: new Date('2018-09-01'),
