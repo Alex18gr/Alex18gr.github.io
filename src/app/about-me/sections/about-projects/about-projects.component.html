@@ -1,3 +1,7 @@
-<p>
-  Under Construction...
-</p>
+<ul class="flex flex-col gap-3 mt-3">
+  @for (project of projects(); track project.title) {
+    <li>
+      <app-about-project-item [project]="project" />
+    </li>
+  }
+</ul>

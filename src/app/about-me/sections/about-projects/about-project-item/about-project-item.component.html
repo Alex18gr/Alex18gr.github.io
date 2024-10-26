@@ -1,0 +1,9 @@
+<article class="border-4 border-blue-800 rounded p-2 pb-3 flex flex-col gap-2">
+  <h1 class="text-xl font-semibold text-gray-800">{{ project().title }}</h1>
+  @if (project().purpose) {
+    <h2 class="text-gray-700 italic">{{ project().purpose }}</h2>
+  }
+  <h2 class="text-gray-700">{{ datePeriodText() }}</h2>
+  <p [innerHTML]="project().descriptionContent">
+  </p>
+</article>
