@@ -31,9 +31,9 @@ jobs:
       uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
       with:
         path: dist/alex18gr.github.io/browser
-  # Deployment jobb
+  # Deployment job
   deploy:
-    if: github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == true || github.event_name == 'push'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
