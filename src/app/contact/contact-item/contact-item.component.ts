@@ -18,7 +18,7 @@ export class ContactItemComponent {
 
   copyLinkToClipboard() {
     window.navigator.clipboard.writeText(this.contact().url).then(() => {
-      alert(this.contact().title + ' url copied!');
+      alert(this.contact().urlDescription + ' copied!');
     });
   }
 }
