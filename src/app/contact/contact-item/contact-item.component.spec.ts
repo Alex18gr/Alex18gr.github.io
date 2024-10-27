@@ -11,6 +11,7 @@ describe('ContactItemComponent', () => {
     title: 'LinkedIn',
     icon: faLinkedin,
     url: 'https://www.linkedin.com/in/alexandros-tsichouridis-80771415a/',
+    urlDescription: 'LinkedIn profile link',
     description: 'in/alexandros-tsichouridis-80771415a/'
   };
 

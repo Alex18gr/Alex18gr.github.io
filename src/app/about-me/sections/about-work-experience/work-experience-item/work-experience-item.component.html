@@ -6,7 +6,7 @@
     <h2 class="text-gray-600"><fa-icon class="text-blue-800" [icon]="dateIcon"></fa-icon> {{ datePeriodText() }} &bull; {{ differenceText() }}</h2>
     <ul class="flex flex-col gap-2 ml-1 md:ml-3 mt-2">
       @for (item of workExperienceItem().positions; track item.duration) {
-        <li class="border-2 border-l-blue-800 border-l-4  p-2">
+        <li class="border-2 border-l-blue-800 border-l-4 p-2">
           <app-work-position-item [position]="item" />
         </li>
       }

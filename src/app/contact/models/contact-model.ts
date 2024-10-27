@@ -3,4 +3,5 @@ export interface ContactModel {
   description?: string;
   icon?: any;
   url: string;
+  urlDescription: string;
 }
